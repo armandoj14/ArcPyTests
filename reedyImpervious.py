@@ -29,7 +29,7 @@ arcpy.Project_management(in_dataset="initDelin\ReedySubs871_Diss.shp", out_datas
 print("Project complete")
 
 print("Create geodatabase to place following table (throws error if not in geodatabase)")
-arcpy.CreateFileGDB_management("reedyGISDir + "", "table.gdb")
+arcpy.CreateFileGDB_management(reedyGISDir, "table.gdb")
 print("Geodatabase created")
 
 print("Use tabulate intersection to calculate area and percentage of impervious in each subbasin")
